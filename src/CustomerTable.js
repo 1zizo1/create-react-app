@@ -11,9 +11,9 @@ const CustomerTable = () => {
     fetch('https://server-beta-nine-98.vercel.app/data')
       .then(response => response.json())
       .then(data => {
-        setCustomers(data.customers);
-        setFilteredCustomers(data.customers);
-        setTransactions(data.transactions);
+        setCustomers(data.data.customers);
+        setFilteredCustomers(data.data.customers);
+        setTransactions(data.data.transactions);
       });
   }, []);
 
