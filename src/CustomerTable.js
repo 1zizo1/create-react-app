@@ -8,7 +8,7 @@ const CustomerTable = () => {
   const [selectedCustomerId, setSelectedCustomerId] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:8000/data')
+    fetch('https://server-beta-nine-98.vercel.app/data')
       .then(response => response.json())
       .then(data => {
         setCustomers(data.customers);
